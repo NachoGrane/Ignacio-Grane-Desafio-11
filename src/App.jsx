@@ -7,7 +7,6 @@ import Formulario from "./components/Formulario";
 
 function App() {
   //const [count, setCount] = useState(0);
-
   return (
     <>
       <h1>Desafío 11</h1>
@@ -22,15 +21,23 @@ function App() {
 
       <h2 className="mt-5">Ejercicio 02</h2>
       <hr />
-      <Alerta alertaTipo={"success"}>Esto es una alerta de tipo success</Alerta>
-      <Alerta alertaTipo={"danger"}>Esto es una alerta de tipo danger</Alerta>
-      <Alerta alertaTipo={"warning"}>Esto es una alerta de tipo warning</Alerta>
+      <div className="p-3">
+        <Alerta alertaTipo={"success"}>
+          Esto es una alerta de tipo success
+        </Alerta>
+        <Alerta alertaTipo={"danger"}>Esto es una alerta de tipo danger</Alerta>
+        <Alerta alertaTipo={"warning"}>
+          Esto es una alerta de tipo warning
+        </Alerta>
+      </div>
       <h2 className="mt-5">Ejercicio 03</h2>
       <hr />
       <Contador />
       <h2 className="mt-5">Ejercicio 04</h2>
       <hr />
-      <Formulario />
+      <div className="p-3">
+        <Formulario />
+      </div>
     </>
   );
 }
