@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Tarjeta from "./components/Tarjeta";
 import Alerta from "./components/Alerta";
+import Contador from "./components/Contador";
 
 function App() {
   //const [count, setCount] = useState(0);
@@ -23,6 +24,9 @@ function App() {
       <Alerta alertaTipo={"success"}>Esto es una alerta de tipo success</Alerta>
       <Alerta alertaTipo={"danger"}>Esto es una alerta de tipo danger</Alerta>
       <Alerta alertaTipo={"warning"}>Esto es una alerta de tipo warning</Alerta>
+      <h2 className="mt-5">Ejercicio 02</h2>
+      <hr />
+      <Contador />
     </>
   );
 }
